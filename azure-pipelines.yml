@@ -4,7 +4,7 @@
 jobs:
  - job: J1
    pool:
-    name: default
+    name: Hosted Agent
    steps:
      - task: PublishPipelineArtifact@0
        inputs:
@@ -18,7 +18,7 @@ jobs:
 
  - job: J2
    pool:
-    name: default
+    name: Hosted Agent
    steps:
      - task: PublishPipelineArtifact@0
        inputs:
