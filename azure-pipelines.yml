@@ -1,5 +1,10 @@
+
+
+
 jobs:
  - job: J1
+   pool:
+    name: default
    steps:
      - task: PublishPipelineArtifact@0
        inputs:
@@ -12,6 +17,8 @@ jobs:
         targetPath: 'artifact1.2'
 
  - job: J2
+   pool:
+    name: default
    steps:
      - task: PublishPipelineArtifact@0
        inputs:
