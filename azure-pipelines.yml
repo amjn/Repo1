@@ -16,10 +16,11 @@ jobs:
  - job: J2
    pool:
     name: default
+   dependsOn: J1
    steps:
-     - task: PublishPipelineArtifact@0
-       inputs:
-        artifactName: 'A2'
-        targetPath: 'artifact2'
+     - download: 'A1.1'
+     - powershell: |
+         ls $(Pipeline.Workspace)/
+
 
          
