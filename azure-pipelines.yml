@@ -1,9 +1,9 @@
-jobs:
- - job: J1
-   pool:
-    name: default
-   steps:
-     - task: PublishPipelineArtifact@0
-       inputs:
-         artifactName: 'A1.1'
-         targetPath: 'artifact1.1'
+# jobs:
+#  - job: J1
+#    pool:
+#     name: default
+#    steps:
+#      - task: PublishPipelineArtifact@0
+#        inputs:
+#          artifactName: 'A1.1'
+#          targetPath: 'artifact1.1'
