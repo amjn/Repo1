@@ -1,7 +1,7 @@
-# jobs:
-#  - job: J1
-#    pool:
-#     name: default
+jobs:
+ - job: J1
+   pool:
+    name: default
 #    steps:
 #      - task: PublishPipelineArtifact@0
 #        inputs:
