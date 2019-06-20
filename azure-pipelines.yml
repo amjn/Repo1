@@ -7,20 +7,3 @@ jobs:
        inputs:
          artifactName: 'A1.1'
          targetPath: 'artifact1.1'
-
-     - task: PublishPipelineArtifact@0
-       inputs:
-        artifactName: 'A1.2'
-        targetPath: 'artifact1.2'
-
- - job: J2
-   pool:
-    name: default
-   dependsOn: J1
-   steps:
-     - download: current
-     - powershell: |
-         ls $(Pipeline.Workspace)/
-
-
-         
